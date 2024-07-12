@@ -1,28 +1,28 @@
 export interface UsersInfoI {
-  address: Address;
+  address: AddressI;
   id: number;
   email: string;
   username: string;
   password: string;
-  name: Name;
+  name: NameI;
   phone: string;
   __v: number;
 }
 
-export interface Address {
-  geolocation: Geolocation;
+export interface AddressI {
+  geolocation: GeolocationI;
   city: string;
   street: string;
   number: number;
   zipcode: string;
 }
 
-export interface Geolocation {
+export interface GeolocationI {
   lat: string;
   long: string;
 }
 
-export interface Name {
+export interface NameI {
   firstname: string;
   lastname: string;
 }
